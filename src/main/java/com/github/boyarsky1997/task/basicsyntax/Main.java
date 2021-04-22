@@ -24,7 +24,6 @@ public class Main {
 
         Fibonacci fibonacci = new Fibonacci(sequence.maxEven(), sequence.maxOdd(), 6);
         System.out.println("Fibonacci: " + Arrays.toString(fibonacci.numberFibonacci()));
-        fibonacci.printPercentage();
     }
 
 }

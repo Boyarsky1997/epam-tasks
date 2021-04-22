@@ -17,7 +17,7 @@ public class Sequence implements Iterable<Integer> {
         this.array = array;
     }
 
-    private static int[] createArray(int start, int finish) {
+    protected static int[] createArray(int start, int finish) {
         int[] result = new int[finish - start];
         for (int i = 0; i < result.length; i++) {
             result[i] = start++;
@@ -26,7 +26,7 @@ public class Sequence implements Iterable<Integer> {
         return result;
     }
 
-    private static int[] asPrimitiveArray(List<Integer> list) {
+    protected static int[] asPrimitiveArray(List<Integer> list) {
         int[] result = new int[list.size()];
         for (int i = 0; i < list.size(); i++) {
             result[i] = list.get(i);
@@ -34,7 +34,7 @@ public class Sequence implements Iterable<Integer> {
         return result;
     }
 
-    private static int sum(int[] array) {
+    protected static int sum(int[] array) {
         int sum = 0;
         for (Integer item : array) {
             sum = sum + item;
@@ -43,7 +43,7 @@ public class Sequence implements Iterable<Integer> {
         return sum;
     }
 
-    private static int max(int[] array) {
+    protected static int max(int[] array) {
         Arrays.sort(array);
         return array[array.length - 1];
     }
@@ -70,9 +70,7 @@ public class Sequence implements Iterable<Integer> {
         return Sequence.asPrimitiveArray(list);
     }
 
-    public int sumEven() {
-        return Sequence.sum(this.getEvenArray());
-    }
+    public int sumEven() { return Sequence.sum(this.getEvenArray());}
 
     public int sumOdd() {
         return Sequence.sum(this.getOddArray());
