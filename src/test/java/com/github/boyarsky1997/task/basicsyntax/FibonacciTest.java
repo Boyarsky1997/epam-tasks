@@ -1,11 +1,12 @@
 package com.github.boyarsky1997.task.basicsyntax;
 
+import com.github.boyarsky1997.task.exceptions.MyExceptionClass;
 import org.junit.Assert;
 import org.junit.Test;
 
 public  class FibonacciTest {
     @Test
-    public void testNumberFibonacci() {
+    public void testNumberFibonacci() throws MyExceptionClass {
       Fibonacci fibonacci = new Fibonacci(1,2,4);
 
         long[] actual = fibonacci.numberFibonacci();
