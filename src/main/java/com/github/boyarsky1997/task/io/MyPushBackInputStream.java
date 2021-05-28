@@ -9,6 +9,14 @@ public class MyPushBackInputStream extends InputStream  {
     private int size;
     private byte[] bytes;
 
+    public byte[] getBytes() {
+        return bytes;
+    }
+
+    public InputStream getInputStream() {
+        return inputStream;
+    }
+
     public MyPushBackInputStream(InputStream inputStream, int size) {
         if (size <= 0) {
             throw new IllegalArgumentException("size <= 0");
