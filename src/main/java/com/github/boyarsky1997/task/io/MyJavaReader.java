@@ -26,10 +26,8 @@ public class MyJavaReader {
                 }else if (chars[chars.length-1].equals("/")&&chars[chars.length-2].equals("*")){
                     sb.append(line).append(System.lineSeparator());
                 }
-                if (chars.length>2) {
-                    if (chars[0].equals("*") || chars[1].equals("*")) {
-                        sb.append(line).append(System.lineSeparator());
-                    }
+                if (chars[0].equals("*")||chars[1].equals("*")){
+                    sb.append(line).append(System.lineSeparator());
                 }
             }
         } catch (IOException e) {
