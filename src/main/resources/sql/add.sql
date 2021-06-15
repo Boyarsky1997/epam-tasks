@@ -1,0 +1,1 @@
+insert into pet(name, owner, sex) values (?,?,?);

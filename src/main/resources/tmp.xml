@@ -1,0 +1,14 @@
+<company id="1">
+    <departments >
+        <department>
+            <name>
+                ATB
+            </name>
+            <workers>
+                <worker id="3" >
+                    Roman
+                </worker>
+            </workers>
+        </department>
+    </departments >
+</company>

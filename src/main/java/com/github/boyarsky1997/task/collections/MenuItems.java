@@ -1,12 +1,9 @@
 package com.github.boyarsky1997.task.collections;
 
-import com.github.boyarsky1997.task.collections.command.ACommand;
-import com.github.boyarsky1997.task.collections.command.BCommand;
-import com.github.boyarsky1997.task.collections.command.CCommand;
-import com.github.boyarsky1997.task.collections.command.DCommand;
+import com.github.boyarsky1997.task.collections.command.*;
 
 enum MenuItems {
-    Open(new ACommand()), Save(new BCommand()), Delete(new CCommand()), Exit(new DCommand());
+    Open(new ACommand()), Save(new BCommand()), Delete(new CCommand()), Exit(new DCommand()) ,Language(new ECommand());
 
 
     private final Command command;
